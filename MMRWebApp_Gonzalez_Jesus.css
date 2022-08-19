@@ -1,0 +1,39 @@
+body {font-family: sans-serif;}
+
+.center {margin: auto; display: table;}  
+
+input[type=number] {
+    text-align: right;
+    font-family: monospace;
+    font-size: 1.5em;
+    width: 12em;
+}
+
+input:invalid {border: 2px solid #A00000;}
+
+input:valid {border: 2px solid #00A000;}
+
+input:focus:invalid {color: red;}
+
+input:focus:valid {color: black;}
+
+button {
+    font-size: 1.2em;
+    background-color: #bbbbbb;
+    margin: 5px;
+    width: 12.55em;
+}
+
+#clear {width: 6.1em;}
+
+#defaults {width: 6.1em;}
+
+#summaryTable {font-family: monospace; font-size: 1.5em;}
+
+.desc {text-align: left; padding: 3px}
+
+.nums {text-align: right; padding: 3px;}
+
+#detailedTable {font-family: monospace; font-size: 1.5em; text-align: right; background-color: bisque; border: solid 1px black; width: 26em;}
+
+td {padding: 0px 5px;}

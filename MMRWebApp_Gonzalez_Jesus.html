@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./MMRWebApp_Gonzalez_Jesus.css">
+
+    <!-- Tittle of webpage -->
+    <title>Retirement Calculator</title>
+
+</head>
+<body>
+    <h1 class="center">Retirement Calculator</h1>
+
+    <form id="inputFormId">
+        
+        <table id="inputTable" class="center">
+            
+            <tr>
+                <td>
+                    <input id="startingAge" type="number" placeholder="Starting Age" required min="0" max="200" value="25" step="any">
+                </td>
+
+                <td>
+                    <input id="retirementAge" type="number" placeholder="Retirement Age" required min="0" max="200" value="65" step="any">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input id="startingSalary" type="number" placeholder="Starting Salary" required min="0" max="9999999" step="any" value="50000">
+                </td>
+
+                <td>
+                    <input id="annualSavings" type="number" placeholder="Annual Savings%" required value="10.0" step=".01" min="0.0" max="100.0">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input id="annualRaise" type="number" placeholder="Annual Raise%" required value="2.0" step=".01" min="0.0" max="100.0">
+                </td>
+
+                <td>
+                    <input id="interestRate" type="number" placeholder="Interest Rate%" required value="7.0" step=".01" min="0.0" max="100.0">
+                </td>
+            </tr>
+            
+
+        </table>
+
+        <div id="buttonDiv" class="center">
+            <button type="button" onclick="clearInputs(this.form)" id="clear">Clear </button>
+            <button type="button" onclick="loadDefaults(this.form)" id="defaults"> Defaults </button> 
+            <button type="button" onclick="makeMeRich(this.form)"> Make Me Rich! </button>
+        </div>
+
+    </form>
+
+    <div>
+        <table id="summaryTable" class="center">
+        
+            <tr>
+                <td class="nums"> 999,999 </td>
+                <td class="desc"> Years to invest </td>
+            </tr>
+
+            <tr>
+                <td class="nums"> 999,999 </td>
+                <td class="desc"> Retirement Fund </td>
+            </tr>
+            
+            <tr>
+                <td class="nums"> 999,999 </td>
+                <td class="desc"> Lifetime Salary </td>
+            </tr>
+            
+            <tr>
+                <td class="nums"> 999,999 </td>
+                <td class="desc"> Total Saved </td>
+            </tr>
+            
+            <tr>
+                <td class="nums"> 999,999 </td>
+                <td class="desc"> Earned Interest </td>
+            </tr>
+
+        </table>
+        
+    </div>
+
+    <div>
+        <table id="detailedTable" class="center">
+
+            <tr>
+                <td>Age</td>
+                <td>Salary</td>
+                <td>Savings</td>
+                <td>Interest</td>
+                <td>Retirement</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./MMRWebApp_Gonzalez_Jesus.js"></script>
+    <script type="text/javascript" src="./FormattingToolsLibrary.js"></script>
+</body>
+</html>
